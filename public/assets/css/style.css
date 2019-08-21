@@ -1,0 +1,223 @@
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+a {
+    color: #28a745;
+}
+
+a:hover {
+    color: gray;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    background-color: #28a745;
+}
+
+.custom-control-input:checked~.custom-control-label::before {
+    color: #fff;
+    border-color: #28a745;
+    background-color: #28a745;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    line-height: 60px; /* Vertically center the text there */
+    background-color: #f5f5f5;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #fafafa;
+}
+
+p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1em;
+  font-weight: 300;
+  line-height: 1.7em;
+  color: #999;
+}
+
+a,
+a:hover,
+a:focus {
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.navbar {
+  padding: 15px 10px;
+  background: #fff;
+  border: none;
+  border-radius: 0;
+  /* margin-bottom: 40px; */
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-btn {
+  box-shadow: none;
+  outline: none !important;
+  border: none;
+}
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+
+.wrapper {
+    display: flex;
+    align-items: stretch;
+}
+
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    transition: all 0.3s;
+    position: absolute;
+    background:#ffff;
+    top: 96px;
+}
+
+#sidebar a,
+#sidebar a:hover,
+#sidebar a:focus {
+    color: inherit;
+}
+
+#sidebar.active {
+    margin-left: -250px;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+
+#sidebar ul li a:hover {
+    background: #28a745;
+}
+
+#sidebar ul li a p {
+    color: #28a745;
+    padding: 10px;
+}
+
+#sidebar ul li a p:hover {
+    color: #ffff;
+    padding: 10px;
+}
+
+#sidebar ul li.active > a,
+a[aria-expanded="true"] {
+    color: #fff;
+    background: #6d7fcc;
+}
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+a[aria-expanded="false"]::before,
+a[aria-expanded="true"]::before {
+    content: '\e259';
+    display: block;
+    position: absolute;
+    right: 20px;
+    font-family: 'Glyphicons Halflings';
+    font-size: 0.6em;
+}
+
+a[aria-expanded="true"]::before {
+    content: '\e260';
+}
+
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: #6d7fcc;
+}
+
+#sidebar ul li.active > a, a[aria-expanded="true"] {
+    color: #fff;
+    background: #4FDDB0;
+    z-index: 4;
+    }
+    
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: #4FDDB0;
+    z-index: 4;
+}
+
+#sidebarCollapse {
+    float: left;
+    margin-top: 60px;
+    z-index: 4;
+}
+
+#logo { 
+    float: left;
+    width: 25%;
+    height:25%;
+}
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+
+#content {
+    padding: 20px;
+    min-height: 100vh;
+    transition: all 0.3s;
+  }
+  
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -250px;
+    }
+    
+    #sidebar.active {
+        margin-left: 0;
+    }
+    
+    #sidebarCollapse span {
+        display: none;
+    }
+}
+
+#map {
+    height: 500px;
+    /* The height is 400 pixels */
+    width: 100%;
+    /* The width is the width of the web page */
+    /* overflow: show; */
+    z-index: 1;
+    position: absolute;
+}
+
+#munchies-logo {
+    height: 55px;
+    width: 120px;
+    width: 140px;
+    height: 40px;
+}
+#search-form {
+    justify-content: center;
+}
+#login-signup {
+    justify-content: flex-end;
+}
+.container2 {
+    position: relative;
+    height: 600px;
+    z-index: 5;
+    width: 1px;
+}
+

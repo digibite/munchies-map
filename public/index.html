@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Munchies</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light sticky-top bg-light">
+        <a class="navbar-brand" href="/">
+            <img src="assets/images/logomunchcies.png" id="munchies-logo">
+        </a>
+        
+        <form class="navbar-form w-50" id="search-form">
+            <div class="form-inline input-group">
+                <div class="input-group-prepend">
+                    <button id="search-button" class="btn btn-outline-success border border-right-0 disabled" type="button"><i class="fas fa-search"></i></button>
+                </div>
+                <input class="form-control bg-light border border-left-0 mr-2" type="text" placeholder="Search" id="search-box">
+                
+                <input class="form-control bg-light border border-right-0" type="text" placeholder="Los Angeles, CA" id="location-box">
+                <div class="input-group-append">
+                    <button id="loc1" class="btn btn-outline-success border" type="button"><i class="fas fa-map-marker-alt"></i></button>
+                </div>
+            </div>
+        </form>
+
+        <form class="form-inline" id="login-signup">
+            <div class="input-group">
+                <a href="/contact" class="btn btn-outline-success border-0 my-2 mx-1 my-sm-0 rounded-0" role="button"><i class="fab fa-meetup"></i> CONTACT</a>
+                <a href="/login" class="btn btn-outline-success border-0 my-2 mx-1 my-sm-0 rounded-0" role="button"><i class="fas fa-user-tie"></i> LOG IN</a>
+                <a href="/signup" class="btn btn-outline-success border-0 my-2 mx-1 my-sm-0 rounded-0" role="button"><i class="fas fa-user-plus"></i> SIGN UP</a>
+            </div>
+        </form>
+    </nav>
+
+    <div id="map" style="overflow: visible !important;"></div>
+
+    <div class="container2">
+        <button type="button" id="sidebarCollapse" class="btn btn-success">
+            <i class="fas fa-arrows-alt-h"></i>
+        </button>
+
+        <nav id="sidebar" class="rounded">
+            <ul class="list-unstyled">
+                <li>
+                    <a href="#">
+                        <img src="assets/images/businesslogo.png" alt="logo" id="logo">
+                        <p>Tacos For All</p>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="#">
+                        <img src="assets/images/businesslogo.png" alt="logo" id="logo">
+                        <p>Hot Dogs</p>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="#">
+                        <img src="assets/images/businesslogo.png" alt="logo" id="logo">
+                        <p>Tacos Tacos</p>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="#">
+                        <img src="assets/images/businesslogo.png" alt="logo" id="logo">
+                        <p>Street Tacos</p>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <footer class="footer">
+            <div class="text-muted text-center"><a href="/">Munchies</a> &copy; 2019</div>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="js/location.js" type="text/javascript"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCQHurErpXDh3Y89jvtzzv_O_3tYyoeptI&callback=initMap" type="text/javascript"></script>
+
+</body>
+</html>

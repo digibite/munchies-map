@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign Up | Munchies</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/signup.css">
+</head>
+<body>    
+    <form class="form-signup">
+        <div class="text-center">
+            <a href="/"><img class="mb-4" src="assets/images/logomunchcies.png" alt="logo" width="300" height="100"></a>  
+        </div>
+        <div class="text-center my-2">
+            <div class="alert alert-success" role="alert">
+                Business Profile <span class="badge badge-success">NEW</span>
+            </div>
+        </div>
+                <label for="email"><i class="far fa-envelope-open"></i> Email</label>
+                <input type="email" class="form-control" id="email" placeholder="ex: emailme@email.com" required>
+                
+                <label for="inputPassword" class="mt-3"><i class="fas fa-key"></i> Password</label>
+                <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+
+                <label for="name" class="mt-3"><i class="far fa-id-badge"></i> Name</label>
+                <input type="text" class="form-control" id="ownerName" placeholder="ex: John Doe" required>
+                
+                <label for="businessName"class="mt-3"><i class="far fa-building"></i> Business Name</label>
+                <input type="text" class="form-control" id="businessName" placeholder="ex: King Taco" required>
+        
+        <button class="btn btn-lg btn-success btn-block mt-4" type="submit" id="profile">Submit</button>
+        <p class="mt-3 text-center"><small>Already have an account? <a href="/login">Login here.</a></small></p>
+
+        <p class="mt-5 mb-3 text muted text-center"><a href="/">Munchies</a> &copy; 2019</p>
+    </form>                
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="js/signup.js" type="text/javascript"></script>  
+      
+</body>
+</html>
